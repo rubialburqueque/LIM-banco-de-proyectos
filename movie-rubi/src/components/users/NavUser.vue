@@ -1,7 +1,9 @@
 <template>
         <div>
       <b-navbar toggleable="lg" type="dark" variant="dark">
-        <b-navbar-brand to="/">Choose - Movie</b-navbar-brand>
+        <b-navbar-brand to="/">
+        <b-img rounded alt="" src="@/logo.jpg"></b-img>
+        </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -33,3 +35,13 @@
       </b-navbar>
     </div>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        mainProps: { blank: true, blankColor: '#777', width: 75, height: 75, class: 'm1' }
+      }
+    }
+  }
+</script>
