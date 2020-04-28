@@ -9,10 +9,10 @@
 <script>
 props: {
         show: {
-            type: Boolean,
-            // default () {
-              //   return false
-            // }
+            type: Boolean
+            default () {
+            return false
+            }
         }
     }
 export default {

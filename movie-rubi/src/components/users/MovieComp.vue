@@ -44,11 +44,11 @@ props: {
         }
 
     filters: {
-        formatId (value) {
+        formatId (value); {
             return `movieCard-${value}`}
-        uppercase (value) {
+        uppercase (value); {
             return value.toUpperCase()}
-        reverse (value) {
+        reverse (value); {
             let word = value.split('')
             return word.reverse().join('')}
         excertp (value) {
