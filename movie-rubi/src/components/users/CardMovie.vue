@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-12  col-md-6 col-lg-4 py-3" v-for="(movie, key) in searchMovies.results" 
             :key="key"
-            v-if="movie.poster_path">
+            >
                 <MovieComp 
                 :id="movie.id" 
                 :title="movie.title" 

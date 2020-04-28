@@ -20,19 +20,19 @@
 props: {
         id: {
             type: Number;
-            required: true,
+            required: true;
         };
         title: {
             type: String;
-            required: true,
+            required: true;
         };
         synopsis: {
-            type: String,
-            // default: 'No posee Sinopsis'// 
+            type: String;
+            //default: 'No posee Sinopsis';
         };
         cover: {
             type: String;
-            required: true,
+            required: true;
         };
         like: {
             type:Boolean;
@@ -40,24 +40,21 @@ props: {
             // default () {
                 // return false// 
            //  }
+        };
         }
-        },
 
     filters: {
         formatId (value) {
-            return `movieCard-${value}`
-        };
+            return `movieCard-${value}`}
         uppercase (value) {
-            return value.toUpperCase()
-        };
+            return value.toUpperCase()}
         reverse (value) {
             let word = value.split('')
-            return word.reverse().join('')
-        };
+            return word.reverse().join('')}
         excertp (value) {
             return value.substring(0, 100) + '...'
-        }
-    },
+        };
+    }
 export default {
     data () {
         return {
